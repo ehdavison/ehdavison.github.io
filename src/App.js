@@ -11,9 +11,9 @@ function App() {
       <Router>
         <Route path='/' render={() => (
           <div>
-            <h4>Elijah Davison</h4>
-            <Link to="/home">Home</Link>
-            <Link to="/projects">Projects</Link>
+            <h4 className="name-banner">Elijah Davison</h4>
+            <Link className="nav-button" to="/home">Home</Link>
+            <Link className="nav-button" to="/projects">Projects</Link>
           </div>
         )}/>
         <Route exact path='/projects' component={Projects}/>

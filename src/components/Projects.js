@@ -64,23 +64,19 @@ function Projects() {
 
         <div className="projects-container">
           <div className="repertoire">
-            <img className="repertoire-icon" alt="repertoire-icon" src={RepertoireIcon} />
-            <Button variant="primary" onClick={() => setRepShow(true)}>Repertoire</Button>
+            <img onClick={() => setRepShow(true)} className="repertoire-icon" alt="repertoire-icon" src={RepertoireIcon} />
           </div>
 
           <div className="scrumi">
-            <img className="scrumi-icon" alt="scrumi-icon" src={ScrumiLogo} />
-            <Button variant="primary" onClick={() => setScrumShow(true)}>Scrumi</Button>
+            <img onClick={() => setScrumShow(true)} className="scrumi-icon" alt="scrumi-icon" src={ScrumiLogo} />
           </div>
 
           <div className="grocery">
-            <img className="grocery-icon" alt="grocery-icon" src={GroceryIcon} />
-            <Button variant="primary" onClick={() => setGroShow(true)}>Grocery</Button>
+            <img onClick={() => setGroShow(true)} className="grocery-icon" alt="grocery-icon" src={GroceryIcon} />
           </div>
 
           <div className="tic-tac-toe">
-            <img className="tic-tac-toe-icon" alt="tic-tac-toe-icon" src={TTTIcon}/>
-            <Button variant="primary" onClick={() => setTicShow(true)}>Grocery</Button>
+            <img onClick={() => setTicShow(true)} className="tic-tac-toe-icon" alt="tic-tac-toe-icon" src={TTTIcon}/>
           </div>
         </div>
     </div>
