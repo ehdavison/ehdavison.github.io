@@ -1,4 +1,29 @@
+.projects-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
 .repertoire {
-    border-width: 10px;
-    border-color: black;
+    border: 5px solid black;
+}
+
+.repertoire-icon {
+    height: auto;
+    width: 200px;
+}
+
+.scrumi-icon {
+    height: auto;
+    width: 200px;
+}
+
+.grocery-icon {
+    height: auto;
+    width: 250px;
+}
+
+.tic-tac-toe-icon {
+    height: auto;
+    width: 230px;
 }

@@ -64,22 +64,22 @@ function Projects() {
 
         <div className="projects-container">
           <div className="repertoire">
-            <img alt="repertoire-icon" src={RepertoireIcon} />
+            <img className="repertoire-icon" alt="repertoire-icon" src={RepertoireIcon} />
             <Button variant="primary" onClick={() => setRepShow(true)}>Repertoire</Button>
           </div>
 
           <div className="scrumi">
-            <img alt="scrumi-icon" src={ScrumiLogo} />
+            <img className="scrumi-icon" alt="scrumi-icon" src={ScrumiLogo} />
             <Button variant="primary" onClick={() => setScrumShow(true)}>Scrumi</Button>
           </div>
 
           <div className="grocery">
-            <img alt="grocery-icon" src={GroceryIcon} />
+            <img className="grocery-icon" alt="grocery-icon" src={GroceryIcon} />
             <Button variant="primary" onClick={() => setGroShow(true)}>Grocery</Button>
           </div>
 
           <div className="tic-tac-toe">
-            <img alt="tic-tac-toe-icon" src={TTTIcon}/>
+            <img className="tic-tac-toe-icon" alt="tic-tac-toe-icon" src={TTTIcon}/>
             <Button variant="primary" onClick={() => setTicShow(true)}>Grocery</Button>
           </div>
         </div>
