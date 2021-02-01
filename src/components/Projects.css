@@ -9,7 +9,6 @@
 .repertoire, .scrumi, .grocery, .tic-tac-toe {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
     margin: 30px;
 }
 
