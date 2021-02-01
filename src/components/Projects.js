@@ -5,6 +5,7 @@ import ScrumiLogo from '../../src/icons/scrumilogo.png'
 import GroceryIcon from '../../src/icons/groceryIcon.png'
 import TTTIcon from '../../src/icons/ticTacToeIcon.png'
 import { render } from '@testing-library/react'
+import '../components/Projects.css'
 
 function Projects() {
     // Show Repertoire Modal
@@ -61,20 +62,24 @@ function Projects() {
           </Modal.Footer>
         </Modal>
 
-            <div className="repertoire-container">
-                <img alt="repertoire-icon" src={RepertoireIcon} />
-                <Button variant="primary" onClick={() => setRepShow(true)}>Repertoire</Button>
+        <div className="projects-container">
+          <div className="repertoire">
+            <img onClick={() => setRepShow(true)} className="repertoire-icon" alt="repertoire-icon" src={RepertoireIcon} />
+          </div>
 
-                <img alt="scrumi-icon" src={ScrumiLogo} />
-                <Button variant="primary" onClick={() => setScrumShow(true)}>Scrumi</Button>
+          <div className="scrumi">
+            <img onClick={() => setScrumShow(true)} className="scrumi-icon" alt="scrumi-icon" src={ScrumiLogo} />
+          </div>
 
-                <img alt="grocery-icon" src={GroceryIcon} />
-                <Button variant="primary" onClick={() => setGroShow(true)}>Grocery</Button>
+          <div className="grocery">
+            <img onClick={() => setGroShow(true)} className="grocery-icon" alt="grocery-icon" src={GroceryIcon} />
+          </div>
 
-                <img alt="tic-tac-toe-icon" src={TTTIcon}/>
-                <Button variant="primary" onClick={() => setTicShow(true)}>Grocery</Button>
-            </div>
+          <div className="tic-tac-toe">
+            <img onClick={() => setTicShow(true)} className="tic-tac-toe-icon" alt="tic-tac-toe-icon" src={TTTIcon}/>
+          </div>
         </div>
+    </div>
     )
 }
 render()
