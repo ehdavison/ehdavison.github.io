@@ -6,6 +6,8 @@ import GroceryIcon from '../../src/icons/groceryIcon.png'
 import TTTIcon from '../../src/icons/ticTacToeIcon.png'
 import { render } from '@testing-library/react'
 import '../components/Projects.css'
+import repSS from '../icons/screenshots/repertoireScreenshot.png'
+
 
 function Projects() {
     // Show Repertoire Modal
@@ -30,6 +32,7 @@ function Projects() {
           <Modal.Footer>
             I can write here too!
           </Modal.Footer>
+          <img src={repSS}></img>
         </Modal>
 
         <Modal show={scrumShow} onHide={() => setScrumShow(false)}>
