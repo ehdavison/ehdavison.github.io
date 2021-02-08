@@ -7,6 +7,7 @@ import TTTIcon from '../../src/icons/ticTacToeIcon.png'
 import { render } from '@testing-library/react'
 import '../components/Projects.css'
 import repSS from '../icons/screenshots/repertoireScreenshot.png'
+import scrumiSS from '../icons/screenshots/scrumi-screenshot.png'
 
 
 function Projects() {
@@ -36,13 +37,15 @@ function Projects() {
           </Modal.Footer>
         </Modal>
 
-        <Modal show={scrumShow} onHide={() => setScrumShow(false)}>
-          <Modal.Header closeButton>
+        <Modal size="lg" show={scrumShow} onHide={() => setScrumShow(false)}>
+          <Modal.Header className="project-modal">
             <Modal.Title>Scrummi</Modal.Title>
+            <img className="project-screenshot" alt="repertoire-screenshot" src={scrumiSS}></img>
           </Modal.Header>
           <Modal.Body>Scrummi is a great app and this is where I'll talk about it!</Modal.Body>
           <Modal.Footer>
-            I can write here too!
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/Pojo-boys/Scrumi">GitHub Repository</a>
           </Modal.Footer>
         </Modal>
 
