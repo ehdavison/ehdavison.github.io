@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+.project-modal {
+    display: flex;
+    flex-direction: column;
+}
+
 .repertoire, .scrumi, .grocery, .tic-tac-toe {
     display: flex;
     flex-direction: column;
@@ -42,4 +47,8 @@
 
 .projects-button {
     align-self:flex-end;
+}
+
+.project-screenshot {
+    width: 100%;
 }

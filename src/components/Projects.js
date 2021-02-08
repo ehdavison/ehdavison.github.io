@@ -24,15 +24,16 @@ function Projects() {
 
     return (
       <div className="project-container">
-        <Modal show={repShow} onHide={() => setRepShow(false)}>
-          <Modal.Header closeButton>
+        <Modal size="lg" show={repShow} onHide={() => setRepShow(false)}>
+          <Modal.Header className="project-modal">
             <Modal.Title>Repertoire</Modal.Title>
+            <img className="project-screenshot" alt="repertoire-screenshot" src={repSS}></img>
           </Modal.Header>
-          <Modal.Body>Repertoire is a great app and this is where I'll talk about it!</Modal.Body>
+          <Modal.Body>Repertoire is a website for musicians to keep track of music they have learned. This website is meant to be used to prepare for performances or as a practice tool.</Modal.Body>
           <Modal.Footer>
-            I can write here too!
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://ehdavison.github.io/repertoire/#/">Deployed Page</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison/repertoire">GitHub Repository</a>
           </Modal.Footer>
-          <img src={repSS}></img>
         </Modal>
 
         <Modal show={scrumShow} onHide={() => setScrumShow(false)}>
