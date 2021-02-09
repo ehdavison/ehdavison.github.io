@@ -7,6 +7,7 @@ import TTTIcon from '../../src/icons/ticTacToeIcon.png'
 import { render } from '@testing-library/react'
 import '../components/Projects.css'
 import repSS from '../icons/screenshots/repertoireScreenshot.png'
+import scrumiSS from '../icons/screenshots/scrumi-screenshot.png'
 
 
 function Projects() {
@@ -24,37 +25,46 @@ function Projects() {
 
     return (
       <div className="project-container">
-        <Modal show={repShow} onHide={() => setRepShow(false)}>
-          <Modal.Header closeButton>
+
+        {/* Repertoire Modal */}
+        <Modal size="lg" show={repShow} onHide={() => setRepShow(false)}>
+          <Modal.Header className="project-modal">
             <Modal.Title>Repertoire</Modal.Title>
+            <img className="project-screenshot" alt="repertoire-screenshot" src={repSS}></img>
           </Modal.Header>
-          <Modal.Body>Repertoire is a great app and this is where I'll talk about it!</Modal.Body>
+          <Modal.Body>Repertoire is a website for musicians to keep track of music they have learned. This website is meant to be used to prepare for performances or as a practice tool.</Modal.Body>
           <Modal.Footer>
-            I can write here too!
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://ehdavison.github.io/repertoire/#/">Deployed Page</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison/repertoire">GitHub Repository</a>
           </Modal.Footer>
-          <img src={repSS}></img>
         </Modal>
 
-        <Modal show={scrumShow} onHide={() => setScrumShow(false)}>
-          <Modal.Header closeButton>
+        {/* Scrumi Modal */}
+        <Modal size="lg" show={scrumShow} onHide={() => setScrumShow(false)}>
+          <Modal.Header className="project-modal">
             <Modal.Title>Scrummi</Modal.Title>
+            <img className="project-screenshot" alt="repertoire-screenshot" src={scrumiSS}></img>
           </Modal.Header>
-          <Modal.Body>Scrummi is a great app and this is where I'll talk about it!</Modal.Body>
+          <Modal.Body>Scrumi is an application to help developers with their scrum tasks. Create a task, add that task to a sprint, and track your progress as you complete sections of your current project. This repository contains the frontend code used to create the frontend application and to connect both ends of our application.</Modal.Body>
           <Modal.Footer>
-            I can write here too!
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/Pojo-boys/Scrumi">GitHub Repository</a>
           </Modal.Footer>
         </Modal>
 
+        {/* Grocery Modal */}
         <Modal show={groShow} onHide={() => setGroShow(false)}>
           <Modal.Header closeButton>
             <Modal.Title>Grocery</Modal.Title>
           </Modal.Header>
           <Modal.Body>Grocery is a great app and this is where I'll talk about it!</Modal.Body>
           <Modal.Footer>
-            I can write here too!
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/Pojo-boys/Scrumi">GitHub Repository</a>
           </Modal.Footer>
         </Modal>
 
+        {/* Tic-Tac-Toe Modal */}
         <Modal show={ticShow} onHide={() => setTicShow(false)}>
           <Modal.Header closeButton>
             <Modal.Title>Tic-Tac-Toe</Modal.Title>
