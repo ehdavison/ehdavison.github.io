@@ -9,6 +9,12 @@ import '../components/Projects.css'
 import repSS from '../icons/screenshots/repertoireScreenshot.png'
 import scrumiSS from '../icons/screenshots/scrumi-screenshot.png'
 
+import htmlIcon from '../icons/html.png'
+import cssIcon from '../icons/css.png'
+import javascriptIcon from '../icons/javascript.png'
+import reactIcon from '../icons/react.png'
+import pythonIcon from '../icons/python.png'
+
 
 function Projects() {
     // Show Repertoire Modal
@@ -32,8 +38,12 @@ function Projects() {
             <Modal.Title>Repertoire</Modal.Title>
             <img className="project-screenshot" alt="repertoire-screenshot" src={repSS}></img>
           </Modal.Header>
-          <Modal.Body>Repertoire is a website for musicians to keep track of music they have learned. This website is meant to be used to prepare for performances or as a practice tool.</Modal.Body>
+          <Modal.Body>Repertoire is a website for musicians to keep track of music they have learned. This website is meant to be used to prepare for performances or as a practice tool. Users can add songs to their repertoire that contain an embedded YouTube link, a link to any sheet music or tabs and any notes the user needs to take on the song. The front end uses ReactJS for the UI and the back end uses Django and python.</Modal.Body>
           <Modal.Footer>
+            <img src={reactIcon} />
+            <img src={javascriptIcon} />
+            <img src={cssIcon} />
+            <img src={pythonIcon} />
             <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://ehdavison.github.io/repertoire/#/">Deployed Page</a>
             <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison/repertoire">GitHub Repository</a>
           </Modal.Footer>
@@ -45,8 +55,11 @@ function Projects() {
             <Modal.Title>Scrummi</Modal.Title>
             <img className="project-screenshot" alt="repertoire-screenshot" src={scrumiSS}></img>
           </Modal.Header>
-          <Modal.Body>Scrumi is an application to help developers with their scrum tasks. Create a task, add that task to a sprint, and track your progress as you complete sections of your current project. This repository contains the frontend code used to create the frontend application and to connect both ends of our application.</Modal.Body>
+          <Modal.Body>Scrumi is an application to help developers with their scrum tasks. Create a task, add that task to a sprint, and track your progress as you complete sections of your current project. Scrumi was developed collaboratively with the scrum process. The front end is made with ReactJS and the backend uses Express and MongoDB.</Modal.Body>
           <Modal.Footer>
+            <img src={reactIcon} />
+            <img src={javascriptIcon} />
+            <img src={cssIcon} />
             <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
             <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/Pojo-boys/Scrumi">GitHub Repository</a>
           </Modal.Footer>
@@ -57,10 +70,14 @@ function Projects() {
           <Modal.Header closeButton>
             <Modal.Title>Grocery</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Grocery is a great app and this is where I'll talk about it!</Modal.Body>
+          <Modal.Body>Grocery is the first full stack project that I did. This is a website where you can upload short grocery list reminders and keep track of them overtime.
+          </Modal.Body>
           <Modal.Footer>
+            <img src={htmlIcon}></img>
+            <img src={cssIcon}></img>
+            <img src={javascriptIcon}></img>
             <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
-            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/Pojo-boys/Scrumi">GitHub Repository</a>
+            <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison/grocery-client">GitHub Repository</a>
           </Modal.Footer>
         </Modal>
 
