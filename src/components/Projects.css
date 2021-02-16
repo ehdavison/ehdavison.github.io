@@ -27,24 +27,28 @@
 }
 
 .repertoire-icon {
+    cursor: pointer;
     height: auto;
     width: 200px;
     margin: 10px;
 }
 
 .scrumi-icon {
+    cursor: pointer;
     height: auto;
     width: 250px;
     margin: 10px;
 }
 
 .grocery-icon {
+    cursor: pointer;
     height: auto;
     width: 250px;
     margin: 10px;
 }
 
 .tic-tac-toe-icon {
+    cursor: pointer;
     height: auto;
     width: 230px;
     margin: 10px;
