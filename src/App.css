@@ -78,3 +78,26 @@
   margin: 10px;
   width: 64px;
 }
+
+.skills-container {
+  color: #4C5454;
+  padding: 10px;
+  border: 4px solid #1EA896;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  width: 150px;
+}
+
+.skills-title {
+}
+
+.skills-icon {
+  width: 48px;
+  height: 48px;
+}

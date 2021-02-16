@@ -14,6 +14,9 @@ import react from './icons/react.png'
 import python from './icons/python.png'
 import html from './icons/html.png'
 import css from './icons/css.png'
+import django from './icons/django.png'
+import mongodb from './icons/mongodb.png'
+import nodejs from './icons/nodejs.png'
 
 function App() {
   return (
@@ -42,15 +45,20 @@ function App() {
               </div>
             </div>
 
-            <div className='bio-container'>
-              <h4>Skills</h4>
-              <img src={javascript}></img>
-              <img src={react}></img>
-              <img src={python}></img>
-              <img src={html}></img>
-              <img src={css}></img>
+            <div className='skills-container'>
+              {/* <h4 className='skills-title'>Skills</h4> */}
+              <img className="skills-icon" src={javascript}></img>
+              <img className="skills-icon" src={react}></img>
+              <img className="skills-icon" src={python}></img>
+              <img className="skills-icon" src={html}></img>
+              <img className="skills-icon" src={css}></img>
+              <img className="skills-icon" src={django}></img>
+              <img className="skills-icon" src={mongodb}></img>
+              <img className="skills-icon" src={nodejs}></img>
             </div>
           </div>
+
+          
         )}></Route>
         <Route exact path='/projects' component={Projects}/>
       </Router>
