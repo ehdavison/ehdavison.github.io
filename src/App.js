@@ -22,15 +22,15 @@ function App() {
   return (
     <div className='big-container'>
       <Router>
-        <Route path='/' render={() => (
+        <Route path='/ehdavison.github.io' render={() => (
           <div>
             <div className="nav-container">
-              <Link className="nav-button" to="/">Home</Link>
+              <Link className="nav-button" to="/ehdavison.github.io">Home</Link>
               <Link className="nav-button" to="/projects">Projects</Link>
             </div>
           </div>
         )}/>
-        <Route exact path='/' render={() => (
+        <Route exact path='/ehdavison.github.io' render={() => (
           <div>
             <div className='bio-container'>
               <img className='headshot' src={headshot} alt='headshot'></img>
