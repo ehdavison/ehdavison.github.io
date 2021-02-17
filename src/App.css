@@ -1,6 +1,21 @@
 .big-container {
-  background-color: #173F5E;
   height: 100vh;
+
+  background: linear-gradient(-45deg, #2D4059, #EA5455, #1EA896, #FFB400);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .name-banner {
@@ -34,8 +49,8 @@
 }
 
 .nav-container {
-  background-color: #173F5E;
-  padding-top: 70px;
+  background-color: transparent;
+  padding-top: 60px;
   margin-left: 45px;
 }
 
@@ -89,9 +104,8 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   background-color: #FFFFFF;
-  width: 150px;
+  width: 50%;
 }
 
 .skills-title {
