@@ -22,15 +22,15 @@ function App() {
   return (
     <div className='big-container'>
       <Router>
-        <Route path='/ehdavison.github.io' render={() => (
+        <Route path='/' render={() => (
           <div>
             <div className="nav-container">
-              <Link className="nav-button" to="/ehdavison.github.io">Home</Link>
+              <Link className="nav-button" to="/">Home</Link>
               <Link className="nav-button" to="/projects">Projects</Link>
             </div>
           </div>
         )}/>
-        <Route exact path='/ehdavison.github.io' render={() => (
+        <Route exact path='/' render={() => (
           <div>
             <div className='bio-container'>
               <img className='headshot' src={headshot} alt='headshot'></img>
@@ -39,8 +39,12 @@ function App() {
                 <p>Full Stack Software Engineer</p>
                 <p>I am Elijah! I'm a software engineer with a passion for music, video games, applications, and websites. After studying and teaching music for the past 6 years I've made a career change and completed General Assembly's Software Engineering Intensive program.</p>
                 <div className='social-container'>
-                <img className='social-icon' src={linkedInIcon}></img>
-                <img className='social-icon' src={gitHubIcon}></img>
+                <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/elijahdavison/">
+                  <img className='social-icon' src={linkedInIcon}></img>
+                </a>
+                <a rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison">
+                  <img className='social-icon' src={gitHubIcon}></img>
+                </a>
                 </div>
               </div>
             </div>
