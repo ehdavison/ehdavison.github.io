@@ -79,7 +79,7 @@ function Projects() {
             <img src={htmlIcon}></img>
             <img src={cssIcon}></img>
             <img src={javascriptIcon}></img>
-            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://pojo-boys.github.io/Scrumi/#/">Deployed Page</a>
+            <a  className="project-link" rel="noreferrer noopener" target="_blank" href="https://ehdavison.github.io/grocery-client/">Deployed Page</a>
             <a className="project-link" rel="noreferrer noopener" target="_blank" href="https://github.com/ehdavison/grocery-client">GitHub Repository</a>
           </Modal.Footer>
         </Modal>
