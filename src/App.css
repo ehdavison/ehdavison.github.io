@@ -55,9 +55,9 @@
 }
 
 .headshot {
-  background-color: #1EA896;
+  background-color: transparent;
   border-radius: 300px;
-  border: 3px solid #1EA896;
+  border: 3px solid transparent;
   height: 25%;
   width: 25%;
 }
@@ -108,7 +108,28 @@
   width: 50%;
 }
 
-.skills-title {
+.resume-button {
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  padding: 7px;
+  margin: 5px;
+  border: 2px solid #1EA896;
+  border-radius: 10px;
+  background-color: #4C5454;
+  color: #FFFFFF;
+  transition-duration: .6s;
+}
+
+.resume-button:hover {
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  padding: 7px;
+  margin: 5px;
+  border: 2px solid #1EA896;
+  border-radius: 10px;
+  background-color: #1EA896;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .skills-icon {

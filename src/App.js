@@ -17,6 +17,7 @@ import css from './icons/css.png'
 import django from './icons/django.png'
 import mongodb from './icons/mongodb.png'
 import nodejs from './icons/nodejs.png'
+import resume from './icons/ed-resume.pdf'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <div className="nav-container">
               <Link className="nav-button" to="/">Home</Link>
               <Link className="nav-button" to="/projects">Projects</Link>
+              <a className='social-icon resume-button' href={resume} target="_blank">Resume</a>
             </div>
           </div>
         )}/>

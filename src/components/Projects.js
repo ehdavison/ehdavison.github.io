@@ -54,7 +54,7 @@ function Projects() {
         {/* Scrumi Modal */}
         <Modal size="lg" show={scrumShow} onHide={() => setScrumShow(false)}>
           <Modal.Header className="project-modal">
-            <Modal.Title>Scrummi</Modal.Title>
+            <Modal.Title>Scrumi</Modal.Title>
             <img className="project-screenshot" alt="repertoire-screenshot" src={scrumiSS}></img>
           </Modal.Header>
           <Modal.Body className="modal-body">Scrumi is an application to help developers with their scrum tasks. Create a task, add that task to a sprint, and track your progress as you complete sections of your current project. Scrumi was developed collaboratively with the scrum process. The front end is made with ReactJS and the backend uses Express and MongoDB.</Modal.Body>
